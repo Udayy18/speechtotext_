@@ -1,0 +1,27 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Speech to text transcription</title>
+    <link rel="stylesheet" href="nextpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <header>Speech to text</header>
+      <form action="#">
+        <div class="row">
+          <label>Transcripted Text</label>
+          <textarea id="phraseDiv">
+            <div className="col-6 output-display rounded">
+              <code>{this.state.displayText}</code>
+            </div>
+          </textarea>
+        </div>
+        
+        <button id="startRecognizeOnceAsyncButton" onClick={() => this.sttFromMic() }>Start</button>
+      </form>
+    </div>
+    <script src="nextpage.js"></script>
+  </body>
+</html>
